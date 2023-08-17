@@ -1,0 +1,218 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    top: 0px;
+    align-items: center;
+    position: sticky;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.logo{
+    margin: 15px 20px;
+}
+
+.logo img{
+    margin: 3px 4px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+ul {
+    display: flex;
+    margin: 2px 2px;
+    padding: 3px;
+    width: 400px;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 5px 7px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/pexels-ella-olsson-1640777.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home h1{
+    text-align: center;
+    color: black;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#services{
+    display: flex;
+    margin: 30px;
+
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 3px 6px;
+    padding: 20px;
+    border-radius: 23px;
+    background-color: #eee6e6;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn{
+    background-color: violet;
+    border: 2px solid black;
+    color: white;
+    padding: 7px 19px;
+    border-radius: 19px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item{
+    padding: 30px;
+    margin: 5px 5px;
+}
+
+#clients img{
+    height: 130px;
+}
+
+#client-section{
+    position: relative;
+    height: 386px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/pexels-ella-olsson-1640777.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width:30%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.4rem; 
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../img/firmbee-com-SpVHcbuKi6E-unsplash.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 9px;
+}
+html{
+    scroll-behavior: smooth;
+}
